@@ -1,7 +1,7 @@
 /**
  * Holt Produkte von der API und rendert sie
  */
-const server = "18.199.84.9";
+const server = "";
 
 async function ladeProdukte() {
   try {

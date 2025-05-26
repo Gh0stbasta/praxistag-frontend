@@ -3,7 +3,7 @@
  *  API und zeigt es an
  */
 
-const server = "18.199.84.9";
+const server = "";
 
 async function ladeProdukt() {
   const params = new URLSearchParams(window.location.search);

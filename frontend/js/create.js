@@ -7,7 +7,7 @@ document.getElementById("create-form").addEventListener("submit", async (e) => {
   const stock = document.getElementById("stock").value;
   const price = document.getElementById("price").value;
 
-  const server = "18.199.84.9";
+  const server = "";
 
   try {
     const response = await fetch(`http://${server}:8000/api/products/`, {

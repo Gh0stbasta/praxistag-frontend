@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
 
-const server = "18.199.84.9";
+const server = "";
 
 async function ladeProdukt() {
   try {
