@@ -7,8 +7,10 @@ document.getElementById("create-form").addEventListener("submit", async (e) => {
   const stock = document.getElementById("stock").value;
   const price = document.getElementById("price").value;
 
+  const server = "18.199.84.9";
+
   try {
-    const response = await fetch("http://localhost:8000/api/products/", {
+    const response = await fetch(`http://${server}:8000/api/products/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

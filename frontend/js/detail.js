@@ -1,16 +1,18 @@
 /**
- * Holt Produktdetail von der API und zeigt es an
+ * Holt Produktdetail von der
+ *  API und zeigt es an
  */
+
+const server = "18.199.84.9";
+
 async function ladeProdukt() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
 
-  console.log(id);
-
   if (!id) return;
 
   try {
-    const response = await fetch(`http://127.0.0.1:8000/api/products/${id}`);
+    const response = await fetch(`http://${server}:8000/api/products/${id}`);
     if (!response.ok) throw new Error("Produkt konnte nicht geladen werden.");
 
     const p = await response.json();

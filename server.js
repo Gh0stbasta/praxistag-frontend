@@ -9,7 +9,7 @@ app.use(express.static('frontend'));
 
 // Basic route
 app.get('/', (req, res) => {
-    res.send('Express server is running!');
+    res.redirect('/frontend/index.html');
 });
 
 // Start server

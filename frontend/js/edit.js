@@ -1,9 +1,11 @@
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
 
+const server = "18.199.84.9";
+
 async function ladeProdukt() {
   try {
-    const res = await fetch(`http://localhost:8000/api/products/${productId}`);
+    const res = await fetch(`http://${server}:8000/api/products/${productId}`);
     if (!res.ok) throw new Error("Produkt konnte nicht geladen werden.");
     const produkt = await res.json();
     document.getElementById("name").value = produkt.name;
@@ -27,7 +29,7 @@ document.getElementById("edit-form").addEventListener("submit", async (e) => {
   };
 
   try {
-    const res = await fetch(`http://localhost:8000/api/products/${productId}`, {
+    const res = await fetch(`http://${server}:8000/api/products/${productId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
