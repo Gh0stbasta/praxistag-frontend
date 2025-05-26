@@ -1,0 +1,26 @@
+body {
+    background-color: #1e1e1e;
+    color: #e0f2e9;
+    padding-top: 60px;
+  }
+  .navbar {
+    background-color: #2a3b2d;
+  }
+  .card {
+    background-color: #2e2e2e;
+    border: 1px solid #3e4e3f;
+  }
+  .card-title, .card-text {
+    color: #e0f2e9;
+  }
+  .btn-primary {
+    background-color: #3c6e47;
+    border-color: #3c6e47;
+  }
+  .btn-primary:hover {
+    background-color: #4f8e5d;
+    border-color: #4f8e5d;
+  }
+  a.btn {
+    color: #fff;
+  }
